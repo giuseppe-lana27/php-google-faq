@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* mix */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{ 
+   list-style: none; 
+}
+li{
+    display: inline-block;
+}
+li a{
+    margin-left: 15px;
+    color: grey;
+}
+/* Header */
+header{
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+.logo{
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo img{
+    width: 100%;
+}
+.privacy{
+    font-size: 20px;
+    color: grey;
+    vertical-align: middle;
+}
+
+.selected{
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
+    padding-bottom: 6px;
+}
+/* main */
+.container{
+    width: 60%;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+}
+h2{
+    margin-bottom: 25px;
+}
+p{
+    margin-bottom: 25px;
+}

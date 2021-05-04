@@ -50,16 +50,52 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <title>Google FAQ</title>
     </head>
     <body>
-        <?php 
-            //stampo in pagina le domande e risposte in array
-            foreach($faqs as $faq){
-                echo "<h2>".$faq["question"]."</h2>";
-                echo "<p>".$faq["answ"]."</p>";
-            }
-        ?>
-        
+
+        <header>    
+            <div class="header-top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <span>
+                    <a href="#" class="privacy">Privacy e termini</a>
+                </span>
+            </div>
+            <div class="header-bottom">
+                <ul>
+                    <li>
+                        <a href="#">Introduzione</a>
+                    </li>
+                    <li>
+                        <a href="#">Norme sulla privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Termini di servizio</a>
+                    </li>
+                    <li>
+                        <a href="#">Tecnologie</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">Domande frequenti</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <?php 
+                    //stampo in pagina le domande e risposte in array
+                    foreach($faqs as $faq){
+                        echo "<h2>".$faq["question"]."</h2>";
+                        echo "<p>".$faq["answ"]."</p>";
+                    }
+                ?>
+            </div>
+        </main>
     </body>
 </html>
